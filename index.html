@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lucky 9</title>
+</head>
+
+<style>
+    body {
+        background-color: aqua;
+    }
+
+    .button {
+        background-color: turquoise;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 2em;
+    }
+
+    .button:hover {
+        background-color: aquamarine;
+    }
+
+    .container {
+        background-color: turquoise;
+        padding: 2em;
+        height: 49em;
+        width: 70em;
+    }
+
+    .header {
+        padding: 2px;
+        display: block;
+        background-color: turquoise;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="header">
+            <h2>Click the button to play Lucky 9!</h2>
+            <p>A simple game made by Ael</p>
+        </div>
+
+        <button class="button" onclick="lucky9generator()">Click to Draw!</button>
+        <div class="container" id="contain">
+            <div class="cardimage" id=card>
+                <img id="cardimage1" src="">
+                <img id="cardimage2" src="">
+            </div>
+        </div>
+    </center>
+    <script src="lucky9.js"></script>
+</body>
+
+</html>
