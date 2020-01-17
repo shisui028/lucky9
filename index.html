@@ -11,56 +11,94 @@
 
 <style>
     body {
-        background-color: aqua;
+        background-image: url("background.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat
     }
 
     .button {
-        background-color: turquoise;
+        background-color: rgba(0, 0, 0, 0.3);
         border: none;
         color: black;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin-bottom: 2em;
+        margin-bottom: 0.5em;
     }
 
     .button:hover {
-        background-color: aquamarine;
+        color: white;
+        background-color: grey;
     }
 
     .container {
-        background-color: turquoise;
+        background-color: rgba(0, 0, 0, 0.3);
         padding: 2em;
-        height: 49em;
-        width: 70em;
+        height: 25em;
+        width: 40em;
+        margin-bottom: 4em;
     }
 
     .header {
+        color: white;
         padding: 2px;
         display: block;
-        background-color: turquoise;
+        background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
-        margin-bottom: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    img {
+        width: 40%;
+        height: 50%;
+    }
+
+    .left {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 2em;
+        float: left;
+        height: 44.5em;
+    }
+
+    .right {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 2em;
+        float: right;
+        height: 44.5em;
+    }
+
+    .bottom {
+        color: white;
+        padding: 2px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        margin-bottom: 0.5em;
+        position: absolute;
     }
 </style>
 
 <body>
+    <div class="left"></div>
+    <div class="right"></div>
     <center>
         <div class="header">
             <h2>Click the button to play Lucky 9!</h2>
             <p>A simple game made by Ael</p>
         </div>
-
         <button class="button" onclick="lucky9generator()">Click to Draw!</button>
         <div class="container" id="contain">
             <div class="cardimage" id=card>
-                <img id="cardimage1" src="">
-                <img id="cardimage2" src="">
+                <img id="cardimage1">
+                <img id="cardimage2">
             </div>
         </div>
-    </center>
-    <script src="lucky9.js"></script>
+        <div class="bottom">
+            <h2>Thank You For Playing!</h2>
+            <p>Hart Hart <3</p> </div> </center> <script src="lucky9.js">
+            </script>
 </body>
 
 </html>
